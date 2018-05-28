@@ -17,12 +17,14 @@
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
 </ul>
-<button class="el-button el-button--primary" type="button" (click)="lookMe()">
+<input #box3 (keyup)="onKey(box3.value)">
+    <p>{{values}}</p>
+<button class="el-button el-button--primary" #box2 type="button" (click)="lookMe($event)">
     <!---->
     <!---->
     主要按钮
   </button>
-<el-button type="primary">主要按钮</el-button>
+<el-button #box type="primary" (click)="lookMe($event)">主要按钮</el-button>
 <app-great-angular></app-great-angular>
 <el-tree [model]="products" [show-checkbox]="true">
 </el-tree>

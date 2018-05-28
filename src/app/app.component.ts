@@ -8,11 +8,17 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular';
   public products = [];
+  values = '';
+  
 
   constructor() {
   }
-lookMe() {
-    alert("1");
+  onKey(value: string) {
+    this.values += value + ' | ';
+  }
+  lookMe(event) {
+    console.log(event.target.innerHTML);
+    //alert(o.value);
   }
   ngOnInit() {
     this.products = [
