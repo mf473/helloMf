@@ -19,24 +19,12 @@
 </ul>
 <el-button type="primary">主要按钮</el-button>
 <app-great-angular></app-great-angular>
-<el-tree [model]="data" [show-checkbox]="true">
+<el-tree [model]="products" [show-checkbox]="true">
 </el-tree>
-<script type="text">
-  // in Component
-  var data = [{
-    label: '一级 1',
-    children: [{
-      label: '二级 1-1',
-      children: [{
-        label: '三级 1-1-1',
-      }]
-    }]
-  }, {
-    label: '一级 2',
-    children: [{
-      label: '二级 2-1',
-    }]
-  }, {
-    label: '一级 3',
-  }]
-  </script>
+
+<el-radio class="radio" [(model)]="radio" label="备选1">备选项1</el-radio>
+
+<el-radio class="radio" [(model)]="radio" label="备选2">备选项2</el-radio>
+
+<el-radio class="radio" [(model)]="radio" label="备选3">备选项3</el-radio>
+
