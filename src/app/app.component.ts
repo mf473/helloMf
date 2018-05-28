@@ -11,7 +11,9 @@ export class AppComponent {
 
   constructor() {
   }
-
+lookMe() {
+    alert("1");
+  }
   ngOnInit() {
     this.products = [
       {
