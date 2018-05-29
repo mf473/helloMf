@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular';
   public products = [];
-  values = '';//s
+  values = '';
   
 
   constructor() {
