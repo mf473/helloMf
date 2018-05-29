@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppComponent } from './app.component';
 import { GreatAngularComponent } from './great-angular/great-angular.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
